@@ -85,7 +85,7 @@ class UniversalListView {
     this.textColor = Colors.black,
     this.itemExtent = 35,
     this.diameterRatio = 1.0,
-    this.offAxisFraction = 0.0,
+    this.offAxisFraction = -0.4,
     this.squeeze = 1.2,
   }) {
 
