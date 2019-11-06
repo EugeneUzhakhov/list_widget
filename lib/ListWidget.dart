@@ -145,6 +145,7 @@ class ListWidgetViewState extends State<ListWidgetView> {
           (list.length - 1);
       widget.presenter.scrollPhysics =
           CustomScrollPhysics(itemDimension: demension);
+      updateView();
     });
     return ListWheelScrollView(
         physics: widget.presenter.scrollPhysics,
@@ -170,6 +171,7 @@ class ListWidgetViewState extends State<ListWidgetView> {
           (list.length - 1);
       widget.presenter.scrollPhysics =
           CustomScrollPhysics(itemDimension: demension);
+      updateView();
     });
 
     return ListWheelScrollView(

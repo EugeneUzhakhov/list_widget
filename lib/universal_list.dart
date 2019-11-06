@@ -155,19 +155,15 @@ class UniversalListView {
     switch(countList){
       case 0:
         textItemFirstList = list[numItem];
-        view.updateView();
         break;
       case 1:
         textItemSecondList = list[numItem];
-        view.updateView();
         break;
       case 2:
         textItemThirdList = list[numItem];
-        view.updateView();
         break;
       case 3:
         textItemFourthList = list[numItem];
-        view.updateView();
         break;
     }
   }
