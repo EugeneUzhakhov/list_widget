@@ -38,11 +38,15 @@ class UniversalListView {
   final double squeeze;
 
 
+  ScrollPhysics scrollPhysics;
+
+
 
   final streamController = StreamController<bool>.broadcast();
 
   int fromYear;
   int toYear;
+
   List<String> month = [
     'January',
     'February',
@@ -79,9 +83,9 @@ class UniversalListView {
     this.colorCenteredLines = Colors.black,
     this.textSize = 20,
     this.textColor = Colors.black,
-    this.itemExtent = 30,
+    this.itemExtent = 35,
     this.diameterRatio = 1.0,
-    this.offAxisFraction = -0.5,
+    this.offAxisFraction = 0.0,
     this.squeeze = 1.2,
   }) {
 
@@ -151,15 +155,19 @@ class UniversalListView {
     switch(countList){
       case 0:
         textItemFirstList = list[numItem];
+        view.updateView();
         break;
       case 1:
         textItemSecondList = list[numItem];
+        view.updateView();
         break;
       case 2:
         textItemThirdList = list[numItem];
+        view.updateView();
         break;
       case 3:
         textItemFourthList = list[numItem];
+        view.updateView();
         break;
     }
   }

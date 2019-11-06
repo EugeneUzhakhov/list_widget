@@ -20,7 +20,7 @@ class BodyView extends StatefulWidget {
 
 class BodyViewState extends State<BodyView> {
 
-  var testList = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+  var testList = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10,];
   UniversalListView universalListView;
 
   UniversalListView universalListView2;
